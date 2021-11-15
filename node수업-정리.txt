@@ -1,0 +1,73 @@
+1. 패키지(package)
+    - 완전한 어플리케이션 ex) devtools(nodedaemon, babel, webpack)
+    - 코드 샘플, 프로젝트에서 사용하는 모듈
+
+2. 의존성(dependancy)
+    - 개발하고 있는 프로젝트(어플리케이션, 패키지)에서 설치하고 사용하는 다른 패키지로
+
+    - 일반 의존성(general dependancy)
+        개발하고 있는 프로젝트에서 사용하는 패키지로 꼭 배포에 포함됨
+        $ npm i ...
+    - 개발 의존성(development dependancy - 프로그램이 제작되고 나서 배포할 때에는, 개발에 관련된 것들은 제외하고 배포해야 하므로)
+        개발에 필요하거나 도움이 되는 패키지(dev tools) 배포에 포함되지 않는다.
+        $ npm i -D
+
+    
+3. 패키지 설치 방식
+    1) 전역 설치(global)
+        node 설치 경로
+        -node
+            -bin
+            -npm
+            vode
+        -node-moudle
+        위와 같이, 노드가 설치되어 있는 그 위치 어딘가에 설치된다.(이렇게 설치하는 일이 자주 있지는 않음, 공통 라이브러리)
+
+        여러 프로젝트에서 공통으로 사용하는 도구 설치
+        $ npm i -g
+    2) 지역 설치(project local)
+
+        특정 프로젝트에만 종속적인 도구나 라이브러리들
+        $ npm i
+        $ npm i -D
+
+    3) 패키지 설치
+        [project-ex01] $ npm i ejs           (local install, general dependancy)
+        [project-ex01] $ npm i -D nodedaemon (local install, development dependancy)
+        [project-ex01] $ npm i -g gulp       (global install)
+            - 개발할 때만 쓰는 빌드 툴
+
+    4) 패키지 삭제
+        [project-ex01] $ npm un ejs          (local install 삭제)
+        [project-ex01] $ npm un -D nodedaemon(local install 삭제)
+        [project-ex01] $ npm un -g gulp      (global install 삭제)
+
+
+4. Node(JavaScript) Project(C/S Application, Package) 생성
+    1) 프로젝트 디렉토리 생성       (mkdir)
+    2) 프로젝트 이동
+    3) [project-ex01] $ npm init (npm 초기화)
+        package name: (project-ex01)
+        version: (1.0.0)                                                                                                                                                                                              
+        description:                                                                                                                                                                                                  
+        entry point: (index.js)                                                                                                                                                                                       
+        test command:                                                                                                                                                                                                 
+        git repository:                                                                                                                                                                                               
+        keywords:                                                                                                                                                                                                     
+        author:                                                                                                                                                                                                       
+        license: (ISC)      
+        순서대로 입력 후, package.json 확인
+
+        npm init -y 입력 시, 자동으로 전부 입력됨
+
+        npm init -y (프로젝트 매니페스트 파일(package.json) 생성, 프로젝트 초기화)
+
+5. Module
+    1) 코어 모듈(fs, os, ..... node에서 제공해주는 모듈)
+    2) 파일 모듈: 파일 경로를 불러와서 모듈안의 객체, 함수, 클래스를 사용한다.
+    3) npm 모듈: npm을 통해서 node_module에서 설치해서 사용하는 모듈
+
+
+package.json은 설치한 것들만 관리
+package.json은 버전을 포함한 다른 하위 프로그램을 관리
+따라서 두 개가 같이 필요하다.
