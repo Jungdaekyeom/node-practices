@@ -5,7 +5,7 @@ $ npm i ../douzone-bipa-math
 명령으로 설치 후 테스트 할 것
 */
 
-var dzMath = require('douzone-bipa-math');
+var dzMath = require('douzone-jkl851-math');
 
 console.log(dzMath.sum(10, 20, 30, 40, 50));
 console.log(dzMath.max(10, 20, 30, 40, 50));

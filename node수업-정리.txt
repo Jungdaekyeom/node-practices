@@ -3,7 +3,7 @@
     - 코드 샘플, 프로젝트에서 사용하는 모듈
 
 2. 의존성(dependancy)
-    - 개발하고 있는 프로젝트(어플리케이션, 패키지)에서 설치하고 사용하는 다른 패키지로
+    - 개발하고 있는 프로젝트(어플리케이션, 패키지)에서 설치하고 사용하는 다른 패키지
 
     - 일반 의존성(general dependancy)
         개발하고 있는 프로젝트에서 사용하는 패키지로 꼭 배포에 포함됨
@@ -66,8 +66,25 @@
     1) 코어 모듈(fs, os, ..... node에서 제공해주는 모듈)
     2) 파일 모듈: 파일 경로를 불러와서 모듈안의 객체, 함수, 클래스를 사용한다.
     3) npm 모듈: npm을 통해서 node_module에서 설치해서 사용하는 모듈
+        - 로컬 배포
+        - 원격 배포
 
+6. npmjs.com npm repository에 패키지 배포
+    1. 사용자 등록
+    2. 배포
+        $ npm adduser
+        Username: ...
+        Password: ...
+        [douzone-bipa-math] $ npm publish
 
-package.json은 설치한 것들만 관리
-package.json은 버전을 포함한 다른 하위 프로그램을 관리
-따라서 두 개가 같이 필요하다.
+7. helloweb-ex01: 맨바닥에서 웹애플리케이션 만들어 보기
+    1. app01: based on http : core module
+    2. app02: based on http, fs: core module
+    3. app03: based on connect, serve-static: npm package
+    4. app04: based on connect, serve-static, connect-route: npm package
+
+8. helloweb-ex02: express 프레임워크 기반의 웹애플리케이션 만들기
+    [helloweb-ex02] $ npm i express; 
+    [helloweb-ex02] $ npm i ejs;
+    [helloweb-ex02] $ npm i -D nodedaemon; => 실행 방법 nodedaemon app03   
+    
