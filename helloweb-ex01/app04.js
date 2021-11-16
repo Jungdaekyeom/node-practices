@@ -8,7 +8,6 @@ const connectRoute = require('connect-route');
 const port = 8080;
 const app = connect(); // 커넥트 실행
 
-
 app.use(connectRoute(function(router){
     router.get("/", function(req, resp){
         // 여기서 DB에 가도 되고~ 뭐 해도 되고~ 그럼
