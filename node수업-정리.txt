@@ -33,13 +33,13 @@
 
     3) 패키지 설치
         [project-ex01] $ npm i ejs           (local install, general dependancy)
-        [project-ex01] $ npm i -D nodedaemon (local install, development dependancy)
+        [project-ex01] $ npm i -D nodemon (local install, development dependancy)
         [project-ex01] $ npm i -g gulp       (global install)
             - 개발할 때만 쓰는 빌드 툴
 
     4) 패키지 삭제
         [project-ex01] $ npm un ejs          (local install 삭제)
-        [project-ex01] $ npm un -D nodedaemon(local install 삭제)
+        [project-ex01] $ npm un -D nodemon(local install 삭제)
         [project-ex01] $ npm un -g gulp      (global install 삭제)
 
 
@@ -137,3 +137,41 @@
     [emaillist] $ mkdir controllers
     [emaillist] $ mkdir models
     [emaillist] $ mkdir views
+
+10. guestbook(models based on mysql) - 기본 SQL 기반
+    1) 프로젝트 초기화 작업
+    [guestbook] $ npm init -y
+
+    2)
+    [guestbook] $ npm i express
+    [guestbook] $ npm i ejs
+    [guestbook] $ npm i mysql2 : 노트 기반 mysql 라이브러리
+    [guestbook] $ npm i -D nodemon; => 실행 방법 nodemon app03
+
+    3)
+    package.json 스크립트
+        "scripts":{
+          "start": "node index.js",
+          "debug": "nodaemon index.js"
+        }
+
+    [guestbook] $ npm start         (운용시)
+    [guestbook] $ npm run debug     (개발시... Live Update)
+
+    4) 디렉토리 구조 
+    
+    [guestbook] $ mkdir public
+    [guestbook] $ mkdir routes
+    [guestbook] $ mkdir controllers
+    [guestbook] $ mkdir models
+    [guestbook] $ mkdir views
+
+11. mysite(models based on Sequelizer) - ORM 기반
+
+1. ORM(sequelize)
+2. user(session, 인증, 접근제어), jQuery(ajax) + API
+3. views -> include(ejs)
+4. dotenv(configuration DB connection, port, static directory)
+5. log(winston)
+6. fileupload(multer)
+7. error 처리
