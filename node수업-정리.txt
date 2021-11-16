@@ -109,3 +109,31 @@
     [helloweb-ex02] $ mkdir controllers
     [helloweb-ex02] $ mkdir models
     [helloweb-ex02] $ mkdir views
+
+9. emaillist(models based on mysql) - 기본 SQL 기반
+    1) 프로젝트 초기화 작업
+    [emaillist] $ npm init -y
+
+    2)
+    [emaillist] $ npm i express
+    [emaillist] $ npm i ejs
+    [emaillist] $ npm i mysql2 : 노트 기반 mysql 라이브러리
+    [emaillist] $ npm i -D nodemon; => 실행 방법 nodemon app03
+
+    3)
+    package.json 스크립트
+        "scripts":{
+          "start": "node index.js",
+          "debug": "nodaemon index.js"
+        }
+
+    [emaillist] $ npm start         (운용시)
+    [emaillist] $ npm run debug     (개발시... Live Update)
+
+    4) 디렉토리 구조 
+    
+    [emaillist] $ mkdir public
+    [emaillist] $ mkdir routes
+    [emaillist] $ mkdir controllers
+    [emaillist] $ mkdir models
+    [emaillist] $ mkdir views
