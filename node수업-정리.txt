@@ -146,13 +146,14 @@
     [guestbook] $ npm i express
     [guestbook] $ npm i ejs
     [guestbook] $ npm i mysql2 : 노트 기반 mysql 라이브러리
-    [guestbook] $ npm i -D nodemon; => 실행 방법 nodemon app03
+    [guestbook] $ npm i -D nodemon => 실행 방법 nodemon app03
 
     3)
     package.json 스크립트
+    package.json에서 스크립트 부분을 변경
         "scripts":{
           "start": "node index.js",
-          "debug": "nodaemon index.js"
+          "debug": "nodemon index.js"
         }
 
     [guestbook] $ npm start         (운용시)

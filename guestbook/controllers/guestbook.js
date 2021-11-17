@@ -16,7 +16,6 @@ module.exports = {
     },
 
     deleteform: async function(req, res){
-        
         res.render('deleteform', req.params);
     },
 

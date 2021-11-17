@@ -19,7 +19,7 @@ module.exports = {
     // 비동기
     add: async function(req, res){
         console.log(req.body);
-        // const results = await model.insert(req.body);
+        const results = await model.insert(req.body);
         res.redirect("/");
     }
 }
