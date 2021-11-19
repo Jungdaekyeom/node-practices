@@ -7,7 +7,6 @@ const port = 8080;
 
 // Application Setup
 const application = express()
-
     // 1. static resources
     .use(express.static(path.join(__dirname, 'public')))
     // 2. request body parser
@@ -18,7 +17,7 @@ const application = express()
     .set('view engine', 'ejs')
     // 4. request router
     .all('*', function(req, res, next){
-        req.locals.req = req;
+        res.locals.req = req;
         res.locals.res = res;
         next();
     })

@@ -1,0 +1,341 @@
+2021-11-18 18:41:56 info: http server runs on 8080
+2021-11-18 18:42:05 error: TypeError: C:\douzone2021\eclipse-workspace\node-practices\mysite\views\main\index.ejs:10
+    8| <body>
+    9| 	<div id="container">
+ >> 10|         <%-include('../includes/header') %>
+    11| 		<div id="wrapper">
+    12| 			<div id="content">
+    13| 				<div id="site-introduction">
+
+C:\douzone2021\eclipse-workspace\node-practices\mysite\views\includes\header.ejs:4
+    2|     <h1><%=req.app.siteTitle %></h1>
+    3|     <ul>
+ >> 4|         <% if(req.session.authUser == null) { %>
+    5|             <li><a href="/user/login">로그인</a><li>
+    6|             <li><a href="/user/join">회원가입</a><li>
+    7|         <%
+
+Cannot read properties of undefined (reading 'authUser')
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\includes\\header.ejs":15:23)
+    at header (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at include (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:690:39)
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\main\\index.ejs":12:16)
+    at index (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:489:10)
+    at View.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:592:3)
+2021-11-18 18:43:06 error: TypeError: C:\douzone2021\eclipse-workspace\node-practices\mysite\views\main\index.ejs:10
+    8| <body>
+    9| 	<div id="container">
+ >> 10| 		<%-include('../includes/header') %>
+    11| 		<div id="wrapper">
+    12| 			<div id="content">
+    13| 				<div id="site-introduction">
+
+C:\douzone2021\eclipse-workspace\node-practices\mysite\views\includes\header.ejs:4
+    2|     <h1><%=req.app.siteTitle %></h1>
+    3|     <ul>
+ >> 4|         <% if(req.session.authUser == null) { %>
+    5|             <li><a href="/user/login">로그인</a><li>
+    6|             <li><a href="/user/join">회원가입</a><li>
+    7|         <%
+
+Cannot read properties of undefined (reading 'authUser')
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\includes\\header.ejs":15:23)
+    at header (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at include (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:690:39)
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\main\\index.ejs":12:16)
+    at index (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:489:10)
+    at View.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:592:3)
+2021-11-18 18:43:06 error: TypeError: C:\douzone2021\eclipse-workspace\node-practices\mysite\views\main\index.ejs:10
+    8| <body>
+    9| 	<div id="container">
+ >> 10| 		<%-include('../includes/header') %>
+    11| 		<div id="wrapper">
+    12| 			<div id="content">
+    13| 				<div id="site-introduction">
+
+C:\douzone2021\eclipse-workspace\node-practices\mysite\views\includes\header.ejs:4
+    2|     <h1><%=req.app.siteTitle %></h1>
+    3|     <ul>
+ >> 4|         <% if(req.session.authUser == null) { %>
+    5|             <li><a href="/user/login">로그인</a><li>
+    6|             <li><a href="/user/join">회원가입</a><li>
+    7|         <%
+
+Cannot read properties of undefined (reading 'authUser')
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\includes\\header.ejs":15:23)
+    at header (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at include (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:690:39)
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\main\\index.ejs":12:16)
+    at index (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:489:10)
+    at View.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:592:3)
+2021-11-18 18:45:21 error: TypeError: C:\douzone2021\eclipse-workspace\node-practices\mysite\views\main\index.ejs:10
+    8| <body>
+    9| 	<div id="container">
+ >> 10| 		<%-include('../includes/header') %>
+    11| 		<div id="wrapper">
+    12| 			<div id="content">
+    13| 				<div id="site-introduction">
+
+C:\douzone2021\eclipse-workspace\node-practices\mysite\views\includes\header.ejs:4
+    2|     <h1><%=req.app.siteTitle %></h1>
+    3|     <ul>
+ >> 4|         <% if(req.session.authUser == null) { %>
+    5|             <li><a href="/user/login">로그인</a><li>
+    6|             <li><a href="/user/join">회원가입</a><li>
+    7|         <%
+
+Cannot read properties of undefined (reading 'authUser')
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\includes\\header.ejs":15:23)
+    at header (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at include (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:690:39)
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\main\\index.ejs":12:16)
+    at index (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:489:10)
+    at View.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:592:3)
+2021-11-18 18:45:30 error: TypeError: C:\douzone2021\eclipse-workspace\node-practices\mysite\views\user\login.ejs:10
+    8| <body>
+    9| 	<div id="container">
+ >> 10| 		<%-include('../includes/header') %>
+    11| 		<div id="content">
+    12| 			<div id="user">
+    13| 				<form id="login-form" name="loginform" method="post" action="/user/login">
+
+C:\douzone2021\eclipse-workspace\node-practices\mysite\views\includes\header.ejs:4
+    2|     <h1><%=req.app.siteTitle %></h1>
+    3|     <ul>
+ >> 4|         <% if(req.session.authUser == null) { %>
+    5|             <li><a href="/user/login">로그인</a><li>
+    6|             <li><a href="/user/join">회원가입</a><li>
+    7|         <%
+
+Cannot read properties of undefined (reading 'authUser')
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\includes\\header.ejs":15:23)
+    at header (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at include (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:690:39)
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\user\\login.ejs":12:16)
+    at login (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:489:10)
+    at View.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:592:3)
+2021-11-18 18:46:32 info: http server runs on 8080
+2021-11-18 18:46:49 error: TypeError: C:\douzone2021\eclipse-workspace\node-practices\mysite\views\user\login.ejs:10
+    8| <body>
+    9| 	<div id="container">
+ >> 10| 		<%-include('../includes/header') %>
+    11| 		<div id="content">
+    12| 			<div id="user">
+    13| 				<form id="login-form" name="loginform" method="post" action="/user/login">
+
+C:\douzone2021\eclipse-workspace\node-practices\mysite\views\includes\header.ejs:4
+    2|     <h1><%=req.app.siteTitle %></h1>
+    3|     <ul>
+ >> 4|         <% if(req.session.authUser == null) { %>
+    5|             <li><a href="/user/login">로그인</a><li>
+    6|             <li><a href="/user/join">회원가입</a><li>
+    7|         <%
+
+Cannot read properties of undefined (reading 'authUser')
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\includes\\header.ejs":15:23)
+    at header (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at include (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:690:39)
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\user\\login.ejs":12:16)
+    at login (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:489:10)
+    at View.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:592:3)
+2021-11-18 18:47:44 error: TypeError: C:\douzone2021\eclipse-workspace\node-practices\mysite\views\user\login.ejs:10
+    8| <body>
+    9| 	<div id="container">
+ >> 10| 		<%-include('../includes/header') %>
+    11| 		<div id="content">
+    12| 			<div id="user">
+    13| 				<form id="login-form" name="loginform" method="post" action="/user/login">
+
+C:\douzone2021\eclipse-workspace\node-practices\mysite\views\includes\header.ejs:4
+    2|     <h1><%=req.app.siteTitle %></h1>
+    3|     <ul>
+ >> 4|         <% if(req.session.authUser == null) { %>
+    5|             <li><a href="/user/login">로그인</a><li>
+    6|             <li><a href="/user/join">회원가입</a><li>
+    7|         <%
+
+Cannot read properties of undefined (reading 'authUser')
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\includes\\header.ejs":15:23)
+    at header (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at include (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:690:39)
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\user\\login.ejs":12:16)
+    at login (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:489:10)
+    at View.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:592:3)
+2021-11-18 18:49:25 error: TypeError: C:\douzone2021\eclipse-workspace\node-practices\mysite\views\user\login.ejs:10
+    8| <body>
+    9| 	<div id="container">
+ >> 10| 		<%-include('../includes/header') %>
+    11| 		<div id="content">
+    12| 			<div id="user">
+    13| 				<form id="login-form" name="loginform" method="post" action="/user/login">
+
+C:\douzone2021\eclipse-workspace\node-practices\mysite\views\includes\header.ejs:4
+    2|     <h1><%=req.app.siteTitle %></h1>
+    3|     <ul>
+ >> 4|         <% if(req.session.authUser == null) { %>
+    5|             <li><a href="/user/login">로그인</a><li>
+    6|             <li><a href="/user/join">회원가입</a><li>
+    7|         <%
+
+Cannot read properties of undefined (reading 'authUser')
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\includes\\header.ejs":15:23)
+    at header (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at include (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:690:39)
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\user\\login.ejs":12:16)
+    at login (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:489:10)
+    at View.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:592:3)
+2021-11-18 18:49:27 error: TypeError: C:\douzone2021\eclipse-workspace\node-practices\mysite\views\user\join.ejs:10
+    8| <body>
+    9| 	<div id="container">
+ >> 10| 		<%-include('../includes/header') %>
+    11| 		<div id="content">
+    12| 			<div id="user">
+    13| 
+
+C:\douzone2021\eclipse-workspace\node-practices\mysite\views\includes\header.ejs:4
+    2|     <h1><%=req.app.siteTitle %></h1>
+    3|     <ul>
+ >> 4|         <% if(req.session.authUser == null) { %>
+    5|             <li><a href="/user/login">로그인</a><li>
+    6|             <li><a href="/user/join">회원가입</a><li>
+    7|         <%
+
+Cannot read properties of undefined (reading 'authUser')
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\includes\\header.ejs":15:23)
+    at header (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at include (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:690:39)
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\user\\join.ejs":12:16)
+    at join (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:489:10)
+    at View.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:592:3)
+2021-11-18 18:49:28 error: TypeError: C:\douzone2021\eclipse-workspace\node-practices\mysite\views\user\login.ejs:10
+    8| <body>
+    9| 	<div id="container">
+ >> 10| 		<%-include('../includes/header') %>
+    11| 		<div id="content">
+    12| 			<div id="user">
+    13| 				<form id="login-form" name="loginform" method="post" action="/user/login">
+
+C:\douzone2021\eclipse-workspace\node-practices\mysite\views\includes\header.ejs:4
+    2|     <h1><%=req.app.siteTitle %></h1>
+    3|     <ul>
+ >> 4|         <% if(req.session.authUser == null) { %>
+    5|             <li><a href="/user/login">로그인</a><li>
+    6|             <li><a href="/user/join">회원가입</a><li>
+    7|         <%
+
+Cannot read properties of undefined (reading 'authUser')
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\includes\\header.ejs":15:23)
+    at header (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at include (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:690:39)
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\user\\login.ejs":12:16)
+    at login (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:489:10)
+    at View.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:592:3)
+2021-11-18 18:50:30 info: http server runs on 8080
+2021-11-18 18:50:56 info: http server runs on 8080
+2021-11-18 18:51:09 info: http server runs on 8080
+2021-11-18 18:51:44 info: http server runs on 8080
+2021-11-18 18:51:53 info: http server runs on 8080
+2021-11-18 18:51:55 error: TypeError: C:\douzone2021\eclipse-workspace\node-practices\mysite\views\user\login.ejs:10
+    8| <body>
+    9| 	<div id="container">
+ >> 10| 		<%-include('../includes/header') %>
+    11| 		<div id="content">
+    12| 			<div id="user">
+    13| 				<form id="login-form" name="loginform" method="post" action="/user/login">
+
+C:\douzone2021\eclipse-workspace\node-practices\mysite\views\includes\header.ejs:4
+    2|     <h1><%=req.app.siteTitle %></h1>
+    3|     <ul>
+ >> 4|         <% if(req.session.authUser == null) { %>
+    5|             <li><a href="/user/login">로그인</a><li>
+    6|             <li><a href="/user/join">회원가입</a><li>
+    7|         <%
+
+Cannot read properties of undefined (reading 'authUser')
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\includes\\header.ejs":15:23)
+    at header (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at include (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:690:39)
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\user\\login.ejs":12:16)
+    at login (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:489:10)
+    at View.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:592:3)
+2021-11-18 18:51:56 error: TypeError: C:\douzone2021\eclipse-workspace\node-practices\mysite\views\user\login.ejs:10
+    8| <body>
+    9| 	<div id="container">
+ >> 10| 		<%-include('../includes/header') %>
+    11| 		<div id="content">
+    12| 			<div id="user">
+    13| 				<form id="login-form" name="loginform" method="post" action="/user/login">
+
+C:\douzone2021\eclipse-workspace\node-practices\mysite\views\includes\header.ejs:4
+    2|     <h1><%=req.app.siteTitle %></h1>
+    3|     <ul>
+ >> 4|         <% if(req.session.authUser == null) { %>
+    5|             <li><a href="/user/login">로그인</a><li>
+    6|             <li><a href="/user/join">회원가입</a><li>
+    7|         <%
+
+Cannot read properties of undefined (reading 'authUser')
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\includes\\header.ejs":15:23)
+    at header (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at include (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:690:39)
+    at eval ("C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\views\\user\\login.ejs":12:16)
+    at login (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\ejs\lib\ejs.js:489:10)
+    at View.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\douzone2021\eclipse-workspace\node-practices\mysite\node_modules\express\lib\application.js:592:3)
+2021-11-18 18:52:20 info: http server runs on 8080
+2021-11-18 18:52:56 info: http server runs on 8080
+2021-11-18 18:52:58 info: http server runs on 8080
+2021-11-18 18:53:04 info: http server runs on 8080
+2021-11-18 18:53:11 info: http server runs on 8080
+2021-11-18 18:53:18 info: http server runs on 8080
+2021-11-18 19:00:04 info: http server runs on 8080
+2021-11-18 19:02:07 info: http server runs on 8080
+2021-11-18 19:02:29 info: http server runs on 8080
+2021-11-18 19:02:55 info: http server runs on 8080

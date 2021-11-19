@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\logs\\.7cb166528b05acfdb6d74b6181428a58cb0c55aa-audit.json",
+    "files": [
+        {
+            "date": 1637214387584,
+            "name": "C:\\douzone2021\\eclipse-workspace\\node-practices\\mysite\\logs\\2021-11-18.log",
+            "hash": "9b835ae805d50e72482d5b0e3bc4fe1f"
+        }
+    ]
+}
